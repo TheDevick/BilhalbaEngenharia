@@ -6,8 +6,6 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 
 function IsLinkActive(link: string) {
-  console.log("'" + usePathname() +"' | '" + link + "'")
-  console.log(link===usePathname(), link == usePathname())
   return link === usePathname()
 }
 

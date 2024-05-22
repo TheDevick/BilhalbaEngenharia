@@ -4,9 +4,6 @@ export const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: '**/*.md',
   fields: {
-    slug: {
-      type: 'string',
-    },
     title: {
       type: 'string',
       required: true
@@ -19,16 +16,11 @@ export const Post = defineDocumentType(() => ({
       type: 'string',
       required: true
     },
-    main_picture: {
-      type: 'string',
-      required: true
-    },
-    side_picture: {
-      type: 'string',
-    },
   },
   computedFields: {
     slug: { type: 'string', resolve: (post) => `/posts/${post._raw.flattenedPath}` },
+    mainPicture: { type: 'string', resolve: (post) => `/posts/${post._raw.flattenedPath}/main.jpg` },
+    sidePicture: { type: 'string', resolve: (post) => `/posts/${post._raw.flattenedPath}/side.jpg` },
   },
 }))
 

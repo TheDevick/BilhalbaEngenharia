@@ -1,4 +1,4 @@
-import Content from "@/app/components/content/content";
+import Content from "@/app/components/homepage/content/content";
 import Header from "@/app/components/header";
 import Intro from "@/app/components/intro";
 import Nav from "@/app/components/nav/nav";

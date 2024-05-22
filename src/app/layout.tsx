@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "../../public/assets/css/main.css";
 import "../../public/assets/css/no-script.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bilhalba Engenharia: Projetos Elétricos",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body>
         {children}
         <Script src="assets/js/jquery.min.js" />
         <Script src="assets/js/jquery.scrollex.min.js" />

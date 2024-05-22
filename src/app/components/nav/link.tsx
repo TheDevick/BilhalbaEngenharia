@@ -6,6 +6,8 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 
 function IsLinkActive(link: string) {
+  console.log("'" + usePathname() +"' | '" + link + "'")
+  console.log(link===usePathname(), link == usePathname())
   return link === usePathname()
 }
 
@@ -20,7 +22,7 @@ export default function Link({ link, id }: { link: LinkType, id: string }) {
 
   return (
     <li id={id} className={clsx({
-      'isActive': IsLinkActive(link.href)
+      'active': IsLinkActive(link.href)
     })}>
       <Anchor />
     </li>

@@ -27,9 +27,6 @@ function Post({ post }: { post: PostType }) {
           <Link href={post.slug}>{post.title}</Link>
         </h2>
       </header>
-      <Link href={post.slug} className="image fit">
-        <img src={post.mainPicture} alt="" />
-      </Link>
       <ImageNextLink href={post.slug} src={post.mainPicture} />
       <p>{post.description}</p>
       <div className="actions special">

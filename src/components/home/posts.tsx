@@ -3,6 +3,7 @@ import { compareDesc } from 'date-fns';
 import { format } from 'date-fns/format';
 import { ptBR } from 'date-fns/locale';
 import Link from 'next/link';
+import Button from '../common/button/button';
 
 export default function Posts() {
   const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
@@ -10,7 +11,7 @@ export default function Posts() {
   return (
     <section className="posts">
       {posts.map((post: PostType, key) => {
-        return <Post post={post} key={key}/>
+        return <Post post={post} key={key} />
       })}
     </section>
   )
@@ -29,11 +30,9 @@ function Post({ post }: { post: PostType }) {
         <img src={post.mainPicture} alt="" />
       </Link>
       <p>{post.description}</p>
-      <ul className="actions special">
-        <li key={1}>
-          <Link href={post.slug} className="button">Ver mais</Link>
-        </li>
-      </ul>
+      <div className="actions special">
+        <Button href={post.slug}>Ver mais</Button>
+      </div>
     </article>
   )
 }

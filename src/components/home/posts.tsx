@@ -4,6 +4,7 @@ import { format } from 'date-fns/format';
 import { ptBR } from 'date-fns/locale';
 import Link from 'next/link';
 import Button from '../common/button/button';
+import { ImageNextLink } from '../common/image/image';
 
 export default function Posts() {
   const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
@@ -29,6 +30,7 @@ function Post({ post }: { post: PostType }) {
       <Link href={post.slug} className="image fit">
         <img src={post.mainPicture} alt="" />
       </Link>
+      <ImageNextLink href={post.slug} src={post.mainPicture} />
       <p>{post.description}</p>
       <div className="actions special">
         <Button href={post.slug}>Ver mais</Button>

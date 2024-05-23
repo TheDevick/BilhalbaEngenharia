@@ -1,3 +1,4 @@
+import ImageCollection from '@/components/common/image/image-collection';
 import MajorHeading from '@/components/common/major-heading/major-heading';
 import PostImagesFinder from '@/lib/post-images-finder';
 import { allPosts, Post } from 'contentlayer/generated';
@@ -54,30 +55,8 @@ function PostGallery({ gallery }: { gallery: string[][] }) {
   return (
     <div>
       {gallery.map((imageCollection, key) =>
-        <PostGalleryImageCollection imageCollection={imageCollection} key={key} />
+        <ImageCollection imageCollection={imageCollection} key={key} />
       )}
-    </div>
-  )
-}
-
-function PostGalleryImageCollection({ imageCollection }: { imageCollection: string[] }) {
-  return (
-    <div className="box alt">
-      <div className="row gtr-50 gtr-uniform" style={{ justifyContent: "center" }}>
-        {imageCollection.map((image, key) =>
-          <PostGalleryImage image={image} key={key} />
-        )}
-      </div>
-    </div>
-  )
-}
-
-function PostGalleryImage({ image }: { image: string }) {
-  return (
-    <div className="col-4">
-      <span className="image fit">
-        <img src={image} alt="" />
-      </span>
     </div>
   )
 }

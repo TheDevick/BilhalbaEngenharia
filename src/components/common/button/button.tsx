@@ -2,13 +2,32 @@ import { ChildrenType } from "@/types";
 import clsx from "clsx";
 import Link from "next/link";
 
-export default function Button({ href, children, className, primary = false, small = false, fit = false }: { href: string, children: ChildrenType, className?: string, primary?: boolean, small?: boolean, fit?: boolean }) {
+export type ButtonSize = 'large' | 'default' | 'small'
+
+export default function Button({
+  children,
+  href,
+  className = '',
+  size = 'default',
+  fit = false,
+  disabled = false,
+  primary = false,
+}: {
+  children: ChildrenType,
+  href: string,
+  className?: string,
+  size?: ButtonSize,
+  fit?: boolean
+  disabled?: boolean,
+  primary?: boolean,
+}) {
+  const buttonSize = size === 'default' ? '' : size
   return (
     <Link
-      className={clsx("button", className, {
+      className={clsx("button", className, buttonSize, {
         primary: primary,
-        small: small,
-        fit: fit
+        fit: fit,
+        disabled: disabled,
       })}
       href={href}
     >

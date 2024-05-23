@@ -8,7 +8,7 @@ export default function Navbar() {
     'text': 'Página Inicial',
     'isNextLink': true
   }, {
-    'href': '/about-us',
+    'href': '/sobre-nos',
     'text': 'Sobre Nós',
     'isNextLink': true
   }]

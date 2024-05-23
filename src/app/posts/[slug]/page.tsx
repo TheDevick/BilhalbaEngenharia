@@ -1,7 +1,6 @@
+import MajorHeading from '@/components/common/major-heading/major-heading';
 import PostImagesFinder from '@/lib/post-images-finder';
 import { allPosts, Post } from 'contentlayer/generated';
-import { format } from 'date-fns/format';
-import { ptBR } from 'date-fns/locale';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
@@ -31,16 +30,12 @@ export default async function PostLayout({ params }: { params: { slug: string } 
 
 function PostHeader({ post }: { post: Post }) {
   return (
-    <header className="major">
-      <span className="date">
-        {format(post.date, "dd 'de' MMMM 'de' yyyy", { locale: ptBR })}
-      </span>
-      <h1>{post.title}</h1>
-      <p>{post.description}</p>
-      <div className="image main">
-        <img src={post.mainPicture} alt="" />
-      </div>
-    </header>
+    <MajorHeading
+      date={post.date}
+      title={{ tag: "h1", text: post.title }}
+      description={post.description}
+      picture={post.mainPicture}
+    />
   )
 }
 
@@ -68,7 +63,7 @@ function PostGallery({ gallery }: { gallery: string[][] }) {
 function PostGalleryImageCollection({ imageCollection }: { imageCollection: string[] }) {
   return (
     <div className="box alt">
-      <div className="row gtr-50 gtr-uniform" style={{justifyContent: "center"}}>
+      <div className="row gtr-50 gtr-uniform" style={{ justifyContent: "center" }}>
         {imageCollection.map((image, key) =>
           <PostGalleryImage image={image} key={key} />
         )}

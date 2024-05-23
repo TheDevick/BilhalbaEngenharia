@@ -1,10 +1,14 @@
+import MajorHeading from "../common/major-heading/major-heading";
+
 export default function Featured() {
+  const titleText = 'Energia Solar: A solução para um futuro mais sustentável e econômico'
+
   return (
     <article className="post featured">
-      <header className="major">
-        <p>O futuro já chegou! Invista em Energia Solar e tenha uma grande redução na sua conta de luz.</p>
-        <h2>Energia Solar: A solução para um futuro mais sustentável e econômico</h2>
-      </header>
+      <MajorHeading
+        title={{ tag: "h2", text: titleText }}
+        description="O futuro já chegou! Invista em Energia Solar e tenha uma grande redução na sua conta de luz."
+      />
     </article>
   )
 }

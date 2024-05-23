@@ -12,9 +12,9 @@ export type SocialType = {
   icon: string,
 }
 
-export function Social({ social, id }: { social: SocialType, id: string }) {
+export function Social({ social }: { social: SocialType }) {
   return (
-    <li id={id}>
+    <li>
       <a href={social.href} className={clsx("icon brands", social.icon)} target="_blank">
         <span className="label">
           {social.text}
@@ -27,8 +27,8 @@ export function Social({ social, id }: { social: SocialType, id: string }) {
 export function Socials({ useAlt = false }: { useAlt?: boolean }) {
   return (
     <ul className={clsx('icons', { 'alt': useAlt })}>
-      {socials.map((social, id) => {
-        return <Social social={social} id={id.toString()} />
+      {socials.map((social, key) => {
+        return <Social social={social} key={key.toString()} />
       })}
     </ul>
   )

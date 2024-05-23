@@ -9,8 +9,8 @@ export default function Posts() {
 
   return (
     <section className="posts">
-      {posts.map((post: PostType) => {
-        return <Post post={post} />
+      {posts.map((post: PostType, key) => {
+        return <Post post={post} key={key}/>
       })}
     </section>
   )
@@ -30,7 +30,7 @@ function Post({ post }: { post: PostType }) {
       </Link>
       <p>{post.description}</p>
       <ul className="actions special">
-        <li>
+        <li key={1}>
           <Link href={post.slug} className="button">Ver mais</Link>
         </li>
       </ul>

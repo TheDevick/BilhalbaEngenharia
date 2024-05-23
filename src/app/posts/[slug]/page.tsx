@@ -57,8 +57,8 @@ function PostBody({ post }: { post: Post }) {
 function PostGallery({ gallery }: { gallery: string[][] }) {
   return (
     <div>
-      {gallery.map((imageCollection) =>
-        <PostGalleryImageCollection imageCollection={imageCollection} />
+      {gallery.map((imageCollection, key) =>
+        <PostGalleryImageCollection imageCollection={imageCollection} key={key} />
       )}
     </div>
   )
@@ -68,8 +68,8 @@ function PostGalleryImageCollection({ imageCollection }: { imageCollection: stri
   return (
     <div className="box alt">
       <div className="row gtr-50 gtr-uniform">
-        {imageCollection.map((image) =>
-          <PostGalleryImage image={image} />
+        {imageCollection.map((image, key) =>
+          <PostGalleryImage image={image} key={key} />
         )}
       </div>
     </div>

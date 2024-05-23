@@ -8,7 +8,7 @@ export default function Intro() {
         Oferecendo serviços de engenharia elétrica e energia solar às cidades da fronteira de Quaraí, Artigas e região
       </p>
       <ul className="actions">
-        <li>
+        <li key={1}>
           <a href="#header" className="button icon solid solo fa-arrow-down scrolly">Continue</a>
         </li>
       </ul>

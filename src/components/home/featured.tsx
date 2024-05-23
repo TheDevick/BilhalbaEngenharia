@@ -1,4 +1,4 @@
-import MajorHeading from "../common/major-heading/major-heading";
+import MajorHeading from "@/components/common/major-heading/major-heading";
 
 export default function Featured() {
   const titleText = 'Energia Solar: A solução para um futuro mais sustentável e econômico'

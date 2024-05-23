@@ -14,7 +14,7 @@ export default function Header() {
 
 function Intro() {
   return (
-    <div id="intro">
+    <div id="intro" style={{ justifyContent: 'center' }}>
       <h1>
         Bilhalba Engenharia: <br /> Projetos Elétricos
       </h1>

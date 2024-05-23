@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "../../public/assets/css/main.css";
 import "../../public/assets/css/no-script.css";
-import Header from "./components/header";
-import Intro from "./components/intro";
-import Nav from "./components/nav/nav";
+import Header from "@/app/components/content/header";
+import Intro from "@/app/components/content/intro";
+import Nav from "@/app/components/content/nav/nav";
+import Copyright from "@/app/components/content/copyright";
 
 export const metadata: Metadata = {
   title: "Bilhalba Engenharia: Projetos Elétricos",
@@ -28,6 +29,7 @@ export default function RootLayout({
             {children}
           </main>
           <ContentFooter />
+          <Copyright />
         </div>
         <Script src="/assets/js/jquery.min.js" />
         <Script src="/assets/js/jquery.scrollex.min.js" />

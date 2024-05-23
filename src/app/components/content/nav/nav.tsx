@@ -1,5 +1,5 @@
-import Link from "@/app/components/nav/link"
-import { LinkType} from "@/app/components/nav/types"
+import Link from "@/app/components/content/nav/link"
+import { LinkType} from "@/app/components/content/nav/types"
 import { Socials, SocialType } from "@/app/social"
 
 export default function Nav() {

@@ -1,6 +1,6 @@
 import Link from "@/app/components/nav/link"
-import Social from "@/app/components/nav/social"
-import { LinkType, SocialType } from "@/app/components/nav/types"
+import { LinkType} from "@/app/components/nav/types"
+import { Socials, SocialType } from "@/app/social"
 
 export default function Nav() {
   const links = [{
@@ -9,16 +9,10 @@ export default function Nav() {
     'isNextLink': true
   }]
 
-  const socials = [{
-    'href': 'https://www.facebook.com/josenewtoncoffy.bilhalba',
-    'text': 'Facebook',
-    'icon': 'fa-facebook-f'
-  }]
-
   return (
     <nav id="nav">
       <Links links={links} />
-      <Socials socials={socials} />
+      <Socials />
     </nav>
   )
 }
@@ -28,16 +22,6 @@ function Links({ links }: { links: LinkType[] }) {
     <ul className="links">
       {links.map((link, id) => {
         return <Link link={link} id={id.toString()} />
-      })}
-    </ul>
-  )
-}
-
-function Socials({ socials }: { socials: SocialType[] }) {
-  return (
-    <ul className="icons">
-      {socials.map((social, id) => {
-        return <Social social={social} id={id.toString()} />
       })}
     </ul>
   )

@@ -1,9 +1,10 @@
+import ContentFooter from "@/app/components/content/footer";
 import type { Metadata } from "next";
 import Script from "next/script";
 import "../../public/assets/css/main.css";
 import "../../public/assets/css/no-script.css";
-import Intro from "./components/intro";
 import Header from "./components/header";
+import Intro from "./components/intro";
 import Nav from "./components/nav/nav";
 
 export const metadata: Metadata = {
@@ -23,7 +24,10 @@ export default function RootLayout({
           <Intro />
           <Header />
           <Nav />
-          {children}
+          <main id="main">
+            {children}
+          </main>
+          <ContentFooter />
         </div>
         <Script src="/assets/js/jquery.min.js" />
         <Script src="/assets/js/jquery.scrollex.min.js" />

@@ -1,7 +1,11 @@
-import Content from "@/app/components/homepage/content/content";
+import Featured from "@/app/components/homepage/featured";
+import Posts from "@/app/components/homepage/posts";
 
 export default function Home() {
 	return (
-		<Content />
-	);
+		<>
+			<Featured />
+			<Posts />
+		</>
+	)
 }

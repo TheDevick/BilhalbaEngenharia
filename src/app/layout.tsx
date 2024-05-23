@@ -5,9 +5,9 @@ import Header from "@/components/layout/header/header";
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 import Script from "next/script";
-import "../../public/assets/css/fontawesome-all.min.css";
-import "../../public/assets/css/main.css";
-import "../../public/assets/css/no-script.css";
+import "@/styles/fontawesome-all.min.css";
+import "@/styles/main.css";
+import "@/styles/no-script.css";
 
 export const metadata: Metadata = {
   title: "Bilhalba Engenharia: Projetos Elétricos",

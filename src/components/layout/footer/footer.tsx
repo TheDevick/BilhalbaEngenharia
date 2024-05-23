@@ -18,7 +18,7 @@ export default function Footer() {
         </section>
         <section>
           <h3>Social</h3>
-          <Socials useAlt={true} />
+          <Socials useAlt />
         </section>
       </section>
     </footer>

@@ -1,8 +1,7 @@
-import Copyright from "@/app/components/content/copyright";
-import ContentFooter from "@/app/components/content/footer";
-import Header from "@/app/components/content/header";
-import Intro from "@/app/components/content/intro";
-import Nav from "@/app/components/content/nav/nav";
+import Copyright from "@/components/layout/copyright/copyright";
+import ContentFooter from "@/components/layout/footer/footer";
+import Navbar from "@/components/layout/navbar/navbar";
+import Header from "@/components/layout/header/header";
 import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from "next";
 import Script from "next/script";
@@ -24,9 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div id="wrapper" className="fade-in">
-          <Intro />
           <Header />
-          <Nav />
+          <Navbar />
           <main id="main">
             {children}
           </main>

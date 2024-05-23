@@ -1,4 +1,4 @@
-import PostImagesFinder from '@/app/lib/post-images-finder';
+import PostImagesFinder from '@/lib/post-images-finder';
 import { allPosts, Post } from 'contentlayer/generated';
 import { format } from 'date-fns/format';
 import { ptBR } from 'date-fns/locale';

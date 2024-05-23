@@ -1,4 +1,17 @@
-export default function Intro() {
+import Link from "next/link";
+
+export default function Header() {
+  return (
+    <header>
+      <Intro />
+      <div id="header">
+        <Link href="/" className="logo"> Bilhalba Engenharia: Projetos Elétricos </Link>
+      </div>
+    </header>
+  );
+}
+
+function Intro() {
   return (
     <div id="intro">
       <h1>

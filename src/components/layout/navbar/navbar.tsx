@@ -1,8 +1,8 @@
-import Link from "@/app/components/content/nav/link"
-import { LinkType } from "@/app/components/content/nav/types"
-import { Socials } from "@/app/social"
+import { Socials } from "@/components/layout/social"
+import Link from "@/components/layout/navbar/link"
+import { LinkType } from "@/types"
 
-export default function Nav() {
+export default function Navbar() {
   const links = [{
     'href': '/',
     'text': 'Página Inicial',

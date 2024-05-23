@@ -1,6 +1,6 @@
 'use client'
 
-import { LinkType } from "@/app/components/content/nav/types";
+import { LinkType } from "@/types";
 import { clsx } from "clsx";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";

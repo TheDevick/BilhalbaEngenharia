@@ -67,7 +67,7 @@ function PostGallery({ gallery }: { gallery: string[][] }) {
 function PostGalleryImageCollection({ imageCollection }: { imageCollection: string[] }) {
   return (
     <div className="box alt">
-      <div className="row gtr-50 gtr-uniform">
+      <div className="row gtr-50 gtr-uniform" style={{justifyContent: "center"}}>
         {imageCollection.map((image, key) =>
           <PostGalleryImage image={image} key={key} />
         )}

@@ -3,7 +3,15 @@ import clsx from "clsx"
 export const socials = [{
   'href': 'https://www.facebook.com/josenewtoncoffy.bilhalba',
   'text': 'Facebook',
-  'icon': 'fa-facebook-f'
+  'icon': 'brands fab fa-facebook-f'
+}, {
+  'href': 'https://api.whatsapp.com/send/?phone=5555984496965',
+  'text': 'Whatsapp',
+  'icon': 'brands fab fa-whatsapp'
+}, {
+  'href': 'mailto:bilhalba@bilhalba.com.br',
+  'text': 'Email',
+  'icon': 'fas fa-envelope'
 }]
 
 export type SocialType = {
@@ -15,7 +23,7 @@ export type SocialType = {
 export function Social({ social }: { social: SocialType }) {
   return (
     <li>
-      <a href={social.href} className={clsx("icon brands", social.icon)} target="_blank">
+      <a href={social.href} className={clsx("icon", social.icon)} target="_blank">
         <span className="label">
           {social.text}
         </span>

@@ -1,6 +1,7 @@
 import ContentFooter from "@/app/components/content/footer";
 import type { Metadata } from "next";
 import Script from "next/script";
+import "../../public/assets/css/fontawesome-all.min.css";
 import "../../public/assets/css/main.css";
 import "../../public/assets/css/no-script.css";
 import Header from "@/app/components/content/header";

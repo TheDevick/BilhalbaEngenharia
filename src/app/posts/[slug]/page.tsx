@@ -2,6 +2,7 @@ import PostImagesFinder from '@/app/lib/post-images-finder';
 import { allPosts, Post } from 'contentlayer/generated';
 import { format } from 'date-fns/format';
 import { ptBR } from 'date-fns/locale';
+import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
@@ -9,13 +10,13 @@ export async function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
-  if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
+  if (!post) notFound()
   return { title: post.title }
 }
 
 export default async function PostLayout({ params }: { params: { slug: string } }) {
   const post = allPosts.find((post) => post._raw.flattenedPath === params.slug)
-  if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
+  if (!post) notFound()
 
   const gallery = PostImagesFinder(post.slug)
 

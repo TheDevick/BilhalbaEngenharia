@@ -1,13 +1,8 @@
 import { allPosts, Post as PostType } from 'contentlayer/generated';
-import { MetadataRoute } from 'next';
-
-const domain = 'https://bilhalba.com.br'
-
-function buildSitemapForPost(post: PostType) {
-  
-}
 
 export default function sitemap() {
+  const domain = 'https://bilhalba.com.br'
+
   const sitemap = [
     {
       url: domain,
@@ -19,6 +14,12 @@ export default function sitemap() {
       url: domain + '/sobre-nos',
       lastModified: new Date(),
       changeFrequency: 'yearly',
+      priority: 0.6,
+    },
+    {
+      url: domain + '/posts',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
       priority: 0.8,
     }
   ]

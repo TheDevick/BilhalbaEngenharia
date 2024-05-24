@@ -11,6 +11,10 @@ export default function Navbar() {
     'href': '/sobre-nos',
     'text': 'Sobre Nós',
     'isNextLink': true
+  }, {
+    'href': '/posts',
+    'text': 'Posts',
+    'isNextLink': true
   }]
 
   return (

@@ -1,9 +1,14 @@
 import MajorHeading from "@/components/common/major-heading/major-heading";
 
-export default function Home() {
-  const title = 'Estamos dedicados em fornecer soluções em engenharia elétrica.'
-  const description = 'Proporcionando aos nossos clientes soluções de engenharia elétrica e energia solar que atendam às suas necessidades específicas.'
+export function generateMetadata() {
+  return {
+    title: 'Sobre Nós',
+  }
+}
 
+export default function Home() {
+  const title = 'Dedicados em fornecer soluções em engenharia elétrica.'
+  const description = 'Soluções de engenharia elétrica e energia solar que atendam às suas necessidades específicas.'
 
   return (
     <>

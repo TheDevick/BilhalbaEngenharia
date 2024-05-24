@@ -1,18 +1,23 @@
 import Copyright from "@/components/layout/copyright/copyright";
 import ContentFooter from "@/components/layout/footer/footer";
-import Navbar from "@/components/layout/navbar/navbar";
 import Header from "@/components/layout/header/header";
-import { Analytics } from '@vercel/analytics/react';
-import type { Metadata } from "next";
-import Script from "next/script";
+import Navbar from "@/components/layout/navbar/navbar";
 import "@/styles/fontawesome-all.min.css";
 import "@/styles/main.css";
 import "@/styles/no-script.css";
+import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from "next";
+import Script from "next/script";
 
-export const metadata: Metadata = {
-  title: "Bilhalba Engenharia: Projetos Elétricos",
-  description: "Oferecendo serviços de engenharia elétrica e energia solar às cidades da fronteira de Quaraí, Artigas e região",
-};
+export function generateMetadata(): Metadata {
+  return {
+    title: {
+      template: '%s | Bilhalba Engenharia: Projetos Elétricos',
+      default: 'Bilhalba Engenharia: Projetos Elétricos'
+    },
+    description: "Oferecendo serviços de engenharia elétrica e energia solar às cidades da fronteira de Quaraí, Artigas e região",
+  }
+}
 
 export default function RootLayout({
   children,

@@ -12,8 +12,8 @@ import Script from "next/script";
 export function generateMetadata(): Metadata {
   return {
     title: {
-      template: '%s | Bilhalba Engenharia: Projetos Elétricos',
-      default: 'Bilhalba Engenharia: Projetos Elétricos'
+      default: 'Bilhalba Engenharia',
+      template: '%s | Bilhalba Engenharia',
     },
     description: "Oferecendo serviços de engenharia elétrica e energia solar às cidades da fronteira de Quaraí, Artigas e região",
   }

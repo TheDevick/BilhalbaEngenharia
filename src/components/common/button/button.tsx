@@ -1,6 +1,6 @@
-import { ChildrenType } from "@/types";
-import clsx from "clsx";
-import Link from "next/link";
+import { ChildrenType } from '@/types'
+import clsx from 'clsx'
+import Link from 'next/link'
 
 export type ButtonSize = 'large' | 'default' | 'small'
 
@@ -13,21 +13,21 @@ export default function Button({
   disabled = false,
   primary = false,
 }: {
-  children: ChildrenType,
-  href: string,
-  className?: string,
-  size?: ButtonSize,
+  children: ChildrenType
+  href: string
+  className?: string
+  size?: ButtonSize
   fit?: boolean
-  disabled?: boolean,
-  primary?: boolean,
+  disabled?: boolean
+  primary?: boolean
 }) {
   const buttonSize = size === 'default' ? '' : size
   return (
     <Link
-      className={clsx("button", className, buttonSize, {
-        primary: primary,
-        fit: fit,
-        disabled: disabled,
+      className={clsx('button', className, buttonSize, {
+        primary,
+        fit,
+        disabled,
       })}
       href={href}
     >

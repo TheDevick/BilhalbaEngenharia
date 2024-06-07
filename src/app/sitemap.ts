@@ -1,4 +1,4 @@
-import { allPosts, Post as PostType } from 'contentlayer/generated';
+import { allPosts, Post as PostType } from 'contentlayer/generated'
 
 export default function sitemap() {
   const domain = 'https://bilhalba.com.br'
@@ -21,7 +21,7 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
-    }
+    },
   ]
 
   allPosts.forEach((post: PostType) => {

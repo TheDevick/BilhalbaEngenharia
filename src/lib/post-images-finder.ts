@@ -1,11 +1,11 @@
-import path from "path";
-import fs from "fs";
+import path from 'path'
+import fs from 'fs'
 
 export default function PostImagesFinder(slug: string) {
-  const postDirectory = path.join(process.cwd(), 'public', slug);
-  const imagesDirectories = fs.readdirSync(postDirectory).filter((file) =>
-    fs.statSync(path.join(postDirectory, file)).isDirectory()
-  )
+  const postDirectory = path.join(process.cwd(), 'public', slug)
+  const imagesDirectories = fs
+    .readdirSync(postDirectory)
+    .filter((file) => fs.statSync(path.join(postDirectory, file)).isDirectory())
 
   const images = imagesDirectories.map((imageDirectory) => {
     const directory = path.join(postDirectory, imageDirectory)

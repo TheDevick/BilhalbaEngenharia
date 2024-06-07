@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "@rocketseat/eslint-config/next"],
+  "plugins": ["no-relative-import-paths"],
+  "ignores": [".public/assets/js"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off",
+    "no-relative-import-paths/no-relative-import-paths": [
+      "error",
+      { "allowSameFolder": false, "rootDir": "src", "prefix": "@" }
+    ]
+  }
 }

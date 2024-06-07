@@ -1,9 +1,9 @@
 'use client'
 
-import { LinkType } from "@/types";
-import { clsx } from "clsx";
-import NextLink from "next/link";
-import { usePathname } from "next/navigation";
+import { LinkType } from '@/types'
+import { clsx } from 'clsx'
+import NextLink from 'next/link'
+import { usePathname } from 'next/navigation'
 
 function IsLinkActive(link: string) {
   return link === usePathname()
@@ -19,9 +19,11 @@ export default function Link({ link }: { link: LinkType }) {
   }
 
   return (
-    <li className={clsx({
-      'active': IsLinkActive(link.href)
-    })}>
+    <li
+      className={clsx({
+        active: IsLinkActive(link.href),
+      })}
+    >
       <Anchor />
     </li>
   )

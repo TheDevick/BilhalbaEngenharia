@@ -1,4 +1,4 @@
-import { Socials } from "@/components/layout/social"
+import { Socials } from '@/components/layout/social'
 
 export default function Footer() {
   return (
@@ -10,11 +10,17 @@ export default function Footer() {
         </section>
         <section>
           <h3>Telefone</h3>
-          <p><a href="tel:+5555984496965">+55 (55) 98449-6965</a></p>
+          <p>
+            <a href="tel:+5555984496965">+55 (55) 98449-6965</a>
+          </p>
         </section>
         <section>
           <h3>Email</h3>
-          <p><a href="mailto:projetos@bilhalba.com.br">projetos@bilhalba.com.br</a></p>
+          <p>
+            <a href="mailto:projetos@bilhalba.com.br">
+              projetos@bilhalba.com.br
+            </a>
+          </p>
         </section>
         <section>
           <h3>Social</h3>

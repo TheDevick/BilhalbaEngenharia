@@ -1,7 +1,5 @@
-import { ChildrenType } from "@/types";
+import { ChildrenType } from '@/types'
 
 export default function Description({ children }: { children?: ChildrenType }) {
-  return (
-    <p>{children}</p>
-  )
+  return <p>{children}</p>
 }

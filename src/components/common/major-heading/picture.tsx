@@ -1,6 +1,6 @@
-export default function Picture({ src, alt }: { src?: string, alt?: string }) {
+export default function Picture({ src, alt }: { src?: string; alt?: string }) {
   if (src === undefined) {
-    return;
+    return
   }
 
   return (

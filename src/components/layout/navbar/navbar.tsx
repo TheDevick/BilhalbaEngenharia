@@ -1,21 +1,25 @@
-import { Socials } from "@/components/layout/social"
-import Link from "@/components/layout/navbar/link"
-import { LinkType } from "@/types"
+import { Socials } from '@/components/layout/social'
+import Link from '@/components/layout/navbar/link'
+import { LinkType } from '@/types'
 
 export default function Navbar() {
-  const links = [{
-    'href': '/',
-    'text': 'Página Inicial',
-    'isNextLink': true
-  }, {
-    'href': '/sobre-nos',
-    'text': 'Sobre Nós',
-    'isNextLink': true
-  }, {
-    'href': '/posts',
-    'text': 'Posts',
-    'isNextLink': true
-  }]
+  const links = [
+    {
+      href: '/',
+      text: 'Página Inicial',
+      isNextLink: true,
+    },
+    {
+      href: '/sobre-nos',
+      text: 'Sobre Nós',
+      isNextLink: true,
+    },
+    {
+      href: '/posts',
+      text: 'Posts',
+      isNextLink: true,
+    },
+  ]
 
   return (
     <nav id="nav">

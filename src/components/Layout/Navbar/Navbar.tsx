@@ -1,5 +1,5 @@
-import { Socials } from '@/components/layout/social'
-import Link from '@/components/layout/navbar/link'
+import { Socials } from '@/components/Layout/Social'
+import Link from '@/components/Layout/Navbar/Link'
 import { LinkType } from '@/types'
 
 export default function Navbar() {

@@ -1,4 +1,4 @@
-import Image from '@/components/common/image/image'
+import Image from '@/components/Common/Image/Image'
 
 export default function ImageCollection({
   imageCollection,

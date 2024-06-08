@@ -1,4 +1,4 @@
-import MajorHeading from '@/components/common/major-heading/major-heading'
+import MajorHeading from '@/components/Common/MajorHeading/MajorHeading'
 import Link from 'next/link'
 
 export default function NotFound() {

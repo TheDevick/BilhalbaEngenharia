@@ -1,5 +1,5 @@
-import MajorHeading from '@/components/common/major-heading/major-heading'
-import Posts from '@/components/home/posts'
+import MajorHeading from '@/components/Common/MajorHeading/MajorHeading'
+import Posts from '@/components/Home/Posts'
 
 export function generateMetadata() {
   return {

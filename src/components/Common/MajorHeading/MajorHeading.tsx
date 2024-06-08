@@ -1,6 +1,6 @@
-import Date from '@/components/common/major-heading/date'
-import Description from '@/components/common/major-heading/description'
-import Picture from '@/components/common/major-heading/picture'
+import Date from '@/components/Common/MajorHeading/Date'
+import Description from '@/components/Common/MajorHeading/Description'
+import Picture from '@/components/Common/MajorHeading/Picture'
 import { ChildrenType, DateType } from '@/types'
 
 type TitleType = {

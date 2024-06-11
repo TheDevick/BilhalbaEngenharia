@@ -1,4 +1,4 @@
-import MajorHeading from '@/components/Common/MajorHeading/MajorHeading'
+import { MajorHeading } from '@/components/Common/MajorHeading/MajorHeading'
 
 export function generateMetadata() {
   return {
@@ -7,17 +7,16 @@ export function generateMetadata() {
 }
 
 export default function Home() {
-  const title = 'Dedicados em fornecer soluções em engenharia elétrica.'
-  const description =
-    'Soluções de engenharia elétrica e energia solar que atendam às suas necessidades específicas.'
-
   return (
     <>
       <section className="post featured">
-        <MajorHeading
-          title={{ tag: 'h1', text: title }}
-          description={description}
-        />
+        <MajorHeading.Root>
+          <MajorHeading.Featured>
+            Soluções de engenharia elétrica e energia solar que atendam às suas
+            necessidades específicas.
+          </MajorHeading.Featured>
+          <h2>Dedicados em fornecer soluções em engenharia elétrica.</h2>
+        </MajorHeading.Root>
       </section>
       <Services />
       <p>

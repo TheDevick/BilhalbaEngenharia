@@ -3,8 +3,8 @@ import { compareDesc } from 'date-fns'
 import { format } from 'date-fns/format'
 import { ptBR } from 'date-fns/locale'
 import Link from 'next/link'
-import Button from '@/components/common/button/button'
-import { ImageNextLink } from '@/components/common/image/image'
+import { ImageNextLink } from '@/components/Common/Image/Image'
+import Button from '@/components/Common/Button/Button'
 
 export default function Posts() {
   const posts = allPosts.sort((a, b) =>

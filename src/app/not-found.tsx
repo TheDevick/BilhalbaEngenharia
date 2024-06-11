@@ -1,18 +1,13 @@
-import MajorHeading from '@/components/common/major-heading/major-heading'
+import { MajorHeading } from '@/components/Common/MajorHeading/MajorHeading'
 import Link from 'next/link'
 
 export default function NotFound() {
-  const titleText = 'Página não encontrada.'
-  const description = (
-    <>
-      Voltar à <Link href="/">Página Inicial</Link>
-    </>
-  )
-
   return (
-    <MajorHeading
-      title={{ tag: 'h1', text: titleText }}
-      description={description}
-    />
+    <MajorHeading.Root>
+      <MajorHeading.Featured>
+        Voltar à <Link href="/">Página Inicial</Link>
+      </MajorHeading.Featured>
+      <h2>Página não encontrada.</h2>
+    </MajorHeading.Root>
   )
 }

@@ -1,4 +1,4 @@
-import Button from '@/components/common/button/button'
+import Button from '@/components/Common/Button/Button'
 import Link from 'next/link'
 
 export default function Header() {

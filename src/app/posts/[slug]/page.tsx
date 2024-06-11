@@ -1,6 +1,8 @@
-import ImageCollection from '@/components/common/image/image-collection'
-import MajorHeading from '@/components/common/major-heading/major-heading'
-import PostImagesFinder from '@/lib/post-images-finder'
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
+import ImageCollection from '@/components/Common/Image/ImageCollection'
+import { MajorHeading } from '@/components/Common/MajorHeading/MajorHeading'
+import PostImagesFinder from '@/lib/PostImagesFinder'
 import { allPosts, Post } from 'contentlayer/generated'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
@@ -58,12 +60,14 @@ export default async function PostLayout({
 
 function PostHeader({ post }: { post: Post }) {
   return (
-    <MajorHeading
-      date={post.date}
-      title={{ tag: 'h1', text: post.title }}
-      description={post.description}
-      picture={post.mainPicture}
-    />
+    <MajorHeading.Root>
+      <MajorHeading.Featured>
+        {format(post.date, "dd 'de' MMMM 'de' yyyy", { locale: ptBR })}
+      </MajorHeading.Featured>
+      <h1>{post.title}</h1>
+      <MajorHeading.Description>{post.description}</MajorHeading.Description>
+      <MajorHeading.Picture src={post.mainPicture} />
+    </MajorHeading.Root>
   )
 }
 

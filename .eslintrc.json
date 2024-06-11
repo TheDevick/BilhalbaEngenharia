@@ -1,7 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "@rocketseat/eslint-config/next"],
   "plugins": ["no-relative-import-paths"],
-  "ignores": [".public/assets/js"],
+  "ignorePatterns": [".public/assets/js/"],
   "rules": {
     "@next/next/no-img-element": "off",
     "jsx-a11y/alt-text": "off",

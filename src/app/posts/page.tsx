@@ -1,5 +1,5 @@
-import MajorHeading from '@/components/common/major-heading/major-heading'
-import Posts from '@/components/home/posts'
+import { MajorHeading } from '@/components/Common/MajorHeading/MajorHeading'
+import Posts from '@/components/Home/Posts'
 
 export function generateMetadata() {
   return {
@@ -12,10 +12,12 @@ export default function Home() {
   return (
     <>
       <article className="post featured">
-        <MajorHeading
-          title={{ tag: 'h2', text: 'Últimos Posts' }}
-          description="Explore todos os nossos posts e atualizações em um só lugar."
-        />
+        <MajorHeading.Root>
+          <MajorHeading.Featured>
+            Explore todos os nossos posts e atualizações em um só lugar.
+          </MajorHeading.Featured>
+          <h2>Últimos Posts</h2>
+        </MajorHeading.Root>
       </article>
       <Posts />
     </>

@@ -1,6 +1,6 @@
-import { ChildrenType } from '@/types'
 import clsx from 'clsx'
 import Link from 'next/link'
+import React from 'react'
 
 export type ButtonSize = 'large' | 'default' | 'small'
 
@@ -13,7 +13,7 @@ export default function Button({
   disabled = false,
   primary = false,
 }: {
-  children: ChildrenType
+  children: React.ReactNode
   href: string
   className?: string
   size?: ButtonSize

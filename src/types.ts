@@ -7,5 +7,3 @@ export type LinkType = {
 }
 
 export type DateType = string | number | Date
-
-export type ChildrenType = string | React.JSX.Element | React.JSX.Element[]

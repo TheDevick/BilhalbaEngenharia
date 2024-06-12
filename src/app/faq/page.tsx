@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section id="faq">
-      <h2>Perguntas Frequentes.</h2>
+        <h2>Perguntas Frequentes.</h2>
         <ul>
           {questions.map((question, key) => (
             <li key={key}>

@@ -2,9 +2,14 @@ import clsx from 'clsx'
 
 export const socials = [
   {
-    href: 'https://www.facebook.com/josenewtoncoffy.bilhalba',
+    href: 'https://www.facebook.com/bilhalba.engenharia',
     text: 'Facebook',
     icon: 'brands fab fa-facebook-f',
+  },
+  {
+    href: 'https://www.instagram.com/bilhalba.engenharia',
+    text: 'Instagram',
+    icon: 'brands fab fa-instagram',
   },
   {
     href: 'https://api.whatsapp.com/send/?phone=5555984496965',

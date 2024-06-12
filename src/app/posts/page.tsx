@@ -13,10 +13,10 @@ export default function Home() {
     <>
       <article className="post featured">
         <MajorHeading.Root>
-          <MajorHeading.Featured>
-            Explore todos os nossos posts e atualizações em um só lugar.
-          </MajorHeading.Featured>
           <h2>Últimos Posts</h2>
+          <MajorHeading.Description>
+            Explore todos os nossos posts e atualizações em um só lugar.
+          </MajorHeading.Description>
         </MajorHeading.Root>
       </article>
       <Posts />

@@ -7,6 +7,7 @@ import '@/assets/styles/noscript.scss'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export function generateMetadata(): Metadata {
   return {
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Copyright />
         </div>
         <Analytics />
+        <SpeedInsights />
         <Script src="/assets/js/jquery.min.js" />
         <Script src="/assets/js/jquery.scrollex.min.js" />
         <Script src="/assets/js/jquery.scrolly.min.js" />

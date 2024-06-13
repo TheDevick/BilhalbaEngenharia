@@ -19,11 +19,6 @@ export default function Navbar() {
       text: 'Posts',
       isNextLink: true,
     },
-    {
-      href: '/faq',
-      text: 'Perguntas Frequentes',
-      isNextLink: true,
-    },
   ]
 
   return (

@@ -81,6 +81,7 @@
 				vertical-align:		flex-start,
 				flush:				false
 			));
+			justify-content:  center;
 			width: 100%;
 			padding: 0;
 
@@ -97,10 +98,12 @@
 
 				&:nth-child(2n - 1) {
 					border-left-width: 0;
+					border-top-width: 0;
 				}
 
 				&:nth-child(-n + 2) {
 					border-top-width: 0;
+					border-bottom-width: 2px;
 				}
 			}
 

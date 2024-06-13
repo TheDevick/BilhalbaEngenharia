@@ -11,11 +11,11 @@ export default function Home() {
     <>
       <section className="post featured">
         <MajorHeading.Root>
-          <MajorHeading.Featured>
+          <h2>Dedicados em fornecer soluções em engenharia elétrica.</h2>
+          <MajorHeading.Description>
             Soluções de engenharia elétrica e energia solar que atendam às suas
             necessidades específicas.
-          </MajorHeading.Featured>
-          <h2>Dedicados em fornecer soluções em engenharia elétrica.</h2>
+          </MajorHeading.Description>
         </MajorHeading.Root>
       </section>
       <Services />

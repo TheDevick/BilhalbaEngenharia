@@ -1,5 +1,3 @@
-import React from 'react'
-
 export type LinkType = {
   href: string
   text: string
@@ -7,5 +5,3 @@ export type LinkType = {
 }
 
 export type DateType = string | number | Date
-
-export type ChildrenType = string | React.JSX.Element | React.JSX.Element[]

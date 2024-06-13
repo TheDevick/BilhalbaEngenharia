@@ -1,7 +1,7 @@
 ---
 date: 2024-06-13
 title: Bilhalba Engenharia com Projeto Solar no Vila do Parque
-description: Transformando a residência no Bairro Vila do Parque em um exemplo de sustentabilidade e economia com sistema solar.
+description: Transformando uma residência no Bairro Vila do Parque em um exemplo de sustentabilidade e economia com sistema solar.
 ---
 
 No Bairro Vila do Parque, uma residência agora conta com um gerador solar, composto por painéis solares JinkoSolar de 585W cada e um inversor Growatt. Este sistema foi projetado para oferecer eficiência e robustez, atendendo às necessidades energéticas com fontes renováveis e econômicas.

@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/react'
 import '@/assets/styles/globals.css'
 import type { Metadata } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import { ThemeProvider } from 'next-themes'
 
 export function generateMetadata(): Metadata {
   return {
@@ -22,14 +21,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html suppressHydrationWarning lang="pt-BR">
+    <html lang="pt-BR">
       <body>
-        <ThemeProvider attribute="class">
-          <Header />
-          <main>{children}</main>
-          <Analytics />
-          <SpeedInsights />
-        </ThemeProvider>
+        <Header />
+        <main>{children}</main>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

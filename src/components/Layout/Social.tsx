@@ -7,7 +7,7 @@ export const socials = [
     icon: 'brands fab fa-facebook-f',
   },
   {
-    href: 'https://www.instagram.com/bilhalba.engenharia',
+    href: 'https://www.instagram.com/abellabilhalba.eng',
     text: 'Instagram',
     icon: 'brands fab fa-instagram',
   },

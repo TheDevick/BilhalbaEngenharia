@@ -1,6 +1,6 @@
 ---
 date: 2024-05-20
-title: Abella Bilhalba Engenharia com Projeto Solar no Bar Recanto dos Amigos
+title: Projeto Solar no Bar Recanto dos Amigos
 description: Visando o fortalecimento ambiental e resultados econômicos significativos a longo prazo, o Bar Recanto dos Amigos adere a sustentabilidade da Geração Solar.
 ---
 

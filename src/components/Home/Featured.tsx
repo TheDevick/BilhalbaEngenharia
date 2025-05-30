@@ -10,7 +10,7 @@ export default function Featured() {
           src={Banner}
           height={500}
           alt="Abella Bilhalba Engenharia"
-          style={{ height: 300, objectFit: 'contain' }}
+          style={{ height: 300, width: '100%', objectFit: 'contain' }}
         />
         <h2>
           Energia Solar: A solução para um futuro mais sustentável e econômico

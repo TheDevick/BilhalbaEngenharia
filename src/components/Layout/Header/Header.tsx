@@ -23,7 +23,7 @@ function Intro() {
       </h1>
       <p>
         Oferecendo serviços de engenharia elétrica e energia solar às cidades da
-        fronteira de Quaraí, Artigas e região
+        fronteira: Quaraí, Artigas e região
       </p>
       <div className="actions">
         <Button

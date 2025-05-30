@@ -6,7 +6,12 @@ export default function Featured() {
   return (
     <article className="post featured">
       <MajorHeading.Root>
-        <Image src={Banner} height={500} alt="Abella Bilhalba Engenharia" style={{height: 300, objectFit: 'contain'}} />
+        <Image
+          src={Banner}
+          height={500}
+          alt="Abella Bilhalba Engenharia"
+          style={{ height: 300, objectFit: 'contain' }}
+        />
         <h2>
           Energia Solar: A solução para um futuro mais sustentável e econômico
         </h2>

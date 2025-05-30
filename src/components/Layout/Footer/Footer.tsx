@@ -17,9 +17,7 @@ export default function Footer() {
         <section>
           <h3>Email</h3>
           <p>
-            <a href="mailto:contato@bilhalba.com.br">
-              contato@bilhalba.com.br
-            </a>
+            <a href="mailto:contato@bilhalba.com.br">contato@bilhalba.com.br</a>
           </p>
         </section>
         <section>

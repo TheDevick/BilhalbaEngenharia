@@ -1,6 +1,6 @@
 ---
 date: 2024-06-13
-title: Bilhalba Engenharia com Projeto Solar no Vila do Parque
+title: Abella Bilhalba Engenharia com Projeto Solar no Vila do Parque
 description: Transformando uma residência no Bairro Vila do Parque em um exemplo de sustentabilidade e economia com sistema solar.
 ---
 

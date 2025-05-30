@@ -12,8 +12,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 export function generateMetadata(): Metadata {
   return {
     title: {
-      default: 'Bilhalba Engenharia',
-      template: '%s | Bilhalba Engenharia',
+      default: 'Abella Bilhalba Engenharia',
+      template: '%s | Abella Bilhalba Engenharia',
     },
     description:
       'Oferecendo serviços de engenharia elétrica e energia solar às cidades da fronteira de Quaraí, Artigas e região',

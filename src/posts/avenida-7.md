@@ -1,6 +1,6 @@
 ---
 date: 2024-04-21
-title: Bilhalba Engenharia com Projeto Solar no Restaurante Avenida 7
+title: Abella Bilhalba Engenharia com Projeto Solar no Restaurante Avenida 7
 description: Em parceria com o restaurante Avenida 7, implementamos um sistema eficiente que converte a energia solar em uma fonte limpa e renovável, gerando assim uma economia financeira para a empresa.
 ---
 

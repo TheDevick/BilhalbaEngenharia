@@ -8,7 +8,7 @@ export default function Header() {
       <div id="header">
         <Link href="/" className="logo">
           {' '}
-          Bilhalba Engenharia: Projetos Elétricos{' '}
+          Abella Bilhalba Engenharia: Projetos Elétricos
         </Link>
       </div>
     </header>
@@ -19,7 +19,7 @@ function Intro() {
   return (
     <div id="intro" style={{ justifyContent: 'center' }}>
       <h1>
-        Bilhalba Engenharia: <br /> Projetos Elétricos
+        Abella Bilhalba Engenharia: <br /> Projetos Elétricos
       </h1>
       <p>
         Oferecendo serviços de engenharia elétrica e energia solar às cidades da

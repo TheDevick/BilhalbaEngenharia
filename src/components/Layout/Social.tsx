@@ -17,7 +17,7 @@ export const socials = [
     icon: 'brands fab fa-whatsapp',
   },
   {
-    href: 'mailto:bilhalba@bilhalba.com.br',
+    href: 'mailto:contato@bilhalba.com.br',
     text: 'Email',
     icon: 'fas fa-envelope',
   },

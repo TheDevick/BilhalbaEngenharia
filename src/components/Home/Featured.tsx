@@ -1,5 +1,5 @@
 import { MajorHeading } from '@/components/Common/MajorHeading/MajorHeading'
-import Banner from '@/assets/images/logos/banner.png'
+import Banner from '@/assets/images/logos/banner.svg'
 import Image from 'next/image'
 
 export default function Featured() {

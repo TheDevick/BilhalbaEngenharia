@@ -2,7 +2,7 @@ import clsx from 'clsx'
 
 export const socials = [
   {
-    href: 'https://www.facebook.com/bilhalba.engenharia',
+    href: 'https://www.facebook.com/abellabilhalba.eng',
     text: 'Facebook',
     icon: 'brands fab fa-facebook-f',
   },
